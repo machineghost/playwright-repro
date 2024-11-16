@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "allowUmdGlobalAccess": true,
+    "checkJs": true,
+    "module": "commonjs",
+    "paths": {
+      "*": ["types/*", "*"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "validate": false
+      }
+    ],
+    "strictNullChecks": false,
+    "strict": false,
+    "target": "esnext"
+  },
+  "forceConsistentCasingInFileNames": true,
+  "no-implicit-dependencies": [true, ["src", "app", "~"]],
+  "include": [
+    "migrations/**/*.js",
+    "pages/**/*.js",
+    "src/**/*.js",
+    "tests/**/*.js",
+    "potentialMigrations/**/*.js"
+  ],
+  "exclude": ["node_modules", "**/node_modules/*", "build/*", "out/*"]
+}
